@@ -42,7 +42,9 @@ chat_engine = index.as_chat_engine(
     memory=memory,
     system_prompt=(
         """You are a friendly chatbot, able to have normal interactions.
-        You help the users with their questions. Return answers from the documents only. Do not make up your own answers. """
+        You help the users with their questions. Return answers from the documents only.
+        Summarize the answers in less than or up to three sentences.
+        Do not make up your own answers. """
     ),
 )
 
